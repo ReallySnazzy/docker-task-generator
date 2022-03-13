@@ -50,7 +50,7 @@ func buildArchiveRequestHandler(writer http.ResponseWriter, req *http.Request) {
 func main() {
 	http.Handle("/", http.FileServer(http.Dir("static/")))
 	http.HandleFunc("/generate", buildArchiveRequestHandler)
-	err := http.ListenAndServe("0.0.0.0:80", nil)
+	err := http.ListenAndServe("0.0.0.0:8080", nil)
 	if err != nil {
 		log.Fatalln(err)
 	}

@@ -25,5 +25,5 @@ WORKDIR /app
 RUN mkdir ./static/
 COPY --from=0 /app/backend/server ./
 COPY --from=1 /app/webapp/build ./static
-EXPOSE 80
+EXPOSE 8080
 CMD ["./server"]
