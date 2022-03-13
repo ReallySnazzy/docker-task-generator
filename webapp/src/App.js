@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <GitHubCorners
         position="right"
-        href="https://github.com/uiwjs/react-github-corners"
+        href="https://github.com/ReallySnazzy/docker-task-generator"
       />
       <Container>
         <Header title={pageTitle} />
