@@ -1,0 +1,36 @@
+@import "~bootstrap/scss/bootstrap";
+
+.jumbo {
+    padding: 5em 2em;
+    background: rgba(200, 200, 250, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin: 2em 0 1em 0;
+
+    h1 {
+        font-weight: bolder;
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1.5em;
+        font-weight: 400;
+        color: #888;
+
+        @media(min-width: 1000px) {
+            width: 80%;
+        }
+        
+        @media(min-width: 1500px) {
+            width: 70%;
+        }
+    }
+}
+
+.generator-section {
+    margin: 2em 0;
+}
+
+.footer-text {
+    text-align: center;
+}
